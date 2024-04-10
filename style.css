@@ -313,14 +313,14 @@ h2 {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
-    color: #000;
+    color: red;
     text-shadow: 0 1px 0 #fff;
     opacity: 0.5;
     cursor: pointer;
 }
 
 .close:hover {
-    color: #000;
+    color: red;
     text-decoration: none;
     opacity: 0.75;
 }
@@ -573,7 +573,7 @@ input[type="time"] {
 
 
 .close {
-    color: #aaa;
+    color: red;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -581,7 +581,7 @@ input[type="time"] {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: red;
     text-decoration: none;
     cursor: pointer;
 }
