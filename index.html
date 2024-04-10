@@ -7,17 +7,41 @@
     <title>The Great Indian Restaurant</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    @media (max-width: 768px) {
+  .menu-item
+  {
+    width: 100%;
+    padding: 10px;
+    
+  }
+  .menu-section
+  {
+    padding: 20px;
+  }
+  .about-image
+  {
+    margin-left: 0;
+  }
+  .modal
+  {
+    width: 100%;
+  }
+}
+</style>
 </head>
 
 <body>
     <header>
         <h1 class="text-center">The Great Indian Restaurant</h1>
         <p class="text-center">A taste of home away from home</p>
-        <section id="book-table" class="menu-section">
-            <div class="container text-center">
-                <button class="btn btn-primary" id="bookTableBtn" align="center">Book a Table</button>
-            </div>
-        </section>
+       
+          <section id="book-table" class="menu-section" style="padding: 80px;">
+    <div class="container text-center" style="display: flex; justify-content: center;">
+        <button class="btn btn-primary" id="bookTableBtn" style="height: 50px;width: 200px;">Book a Table</button>
+    </div>
+</section>
+
     </header>
 
     <section id="about-us">
