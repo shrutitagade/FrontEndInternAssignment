@@ -479,6 +479,7 @@ input[type="time"] {
         max-width: 200px; 
     }
 }
+
 @media (max-width: 768px) {
   .menu-item
   {
@@ -503,7 +504,7 @@ input[type="time"] {
     }
 
    
-    .about-image img,
+    
     .menu-item img {
         width: 100%; 
         height: auto; 
