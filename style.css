@@ -115,7 +115,6 @@ footer {
     background-position: center;
 }
 
-/* Header Section */
 header {
     text-align: center;
     padding: 20px;
@@ -130,7 +129,7 @@ header {
 {
     height: 50px;
     width: 200px;
-    background-color: #007bff; /* Bootstrap's btn-primary color */
+    background-color: #007bff; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -140,14 +139,13 @@ header {
 }
 #confirm {
     display: block;
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto; 
 }
-/* "Book a Table" Button */
 #bookTableBtn,
 #bookTableBtn2 {
     height: 50px;
     width: 200px;
-    background-color: #007bff; /* Bootstrap's btn-primary color */
+    background-color: #007bff; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -161,7 +159,7 @@ header {
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
-    box-sizing: border-box; /* Include padding and border in width calculation */
+    box-sizing: border-box; 
 }
 
 .row {
@@ -172,23 +170,23 @@ header {
 }
 
 .col-md-3 {
-    flex: 0 0 25%; /* Adjust width for medium-sized screens */
+    flex: 0 0 25%; 
     max-width: 25%;
     padding-right: 15px;
     padding-left: 15px;
-    box-sizing: border-box; /* Include padding and border in width calculation */
+    box-sizing: border-box; 
 }
 
 @media (max-width: 768px) {
     .col-md-3 {
-        flex: 0 0 50%; /* Adjust width for small-sized screens */
+        flex: 0 0 50%;
         max-width: 50%;
     }
 }
 
 @media (max-width: 576px) {
     .col-md-3 {
-        flex: 0 0 100%; /* Adjust width for extra small-sized screens */
+        flex: 0 0 100%; 
         max-width: 100%;
     }
 }
@@ -201,7 +199,7 @@ h2 {
     border: 1px solid darkblue;
     padding: 20px;
     height: 100%;
-    width: calc(100% - 2px); /* Adjust width for padding */
+    width: calc(100% - 2px); 
     color: white;
     box-sizing: border-box;
     display: flex;
@@ -210,10 +208,10 @@ h2 {
 }
 
 .menu-item img {
-    max-width: 100%; /* Ensure image does not exceed container width */
-    height: 300px; /* Maintain aspect ratio */
-    max-height: 200px; /* Set maximum height */
-    width: auto; /* Allow image to resize responsively */
+    max-width: 100%;
+    height: 300px; 
+    max-height: 200px;
+    width: auto; 
 }
 
 @media (max-width: 991.98px) {
@@ -310,7 +308,7 @@ h2 {
     color: #000;
     text-shadow: 0 1px 0 #fff;
     opacity: 0.5;
-    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+    cursor: pointer; 
 }
 
 .close:hover {
@@ -387,14 +385,55 @@ input[type="time"] {
 }
 
 .close:hover {
-    color: #cc0000; /* Darker red on hover */
+    color: #cc0000; 
+}
+/* Adjust menu item size for smaller devices */
+@media (max-width: 576px) {
+    .menu-item {
+        height: auto; /* Allow height to adjust based on content */
+        width: 100%; /* Set width to full width of the container */
+        margin-bottom: 20px; /* Add margin between menu items */
+    }
+    
+    .menu-item img {
+        width: 100%; /* Set image width to full width of its container */
+        height: auto; /* Allow image height to adjust based on width */
+    }
+
+    .menu-item h3 {
+        font-size: 18px; 
+    }
+
+    .menu-item p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-dialog {
+        max-width: 90%; 
+        margin: 1rem auto;
+    }
+    
+    .modal-content {
+        padding: 20px; /* Add padding to the modal content */
+    }
+
+    .modal-title {
+        font-size: 20px; 
+    }
+
+    .modal-body input,
+    .modal-body select {
+        width: 100%; 
+    }
 }
 
 .modal-header {
     background-color: #007bff;
     color: #fff;
     border-radius: 10px 10px 0 0;
-    position: relative; /* Ensure modal header is positioned relative for absolute positioning of close button */
+    position: relative; 
 }
 
 
@@ -412,53 +451,58 @@ input[type="time"] {
     }
 }
 
-/* Adjustments for extra small screens */
 @media (max-width: 576px) {
     .container,
     .about-container {
         padding: 10px;
     }
 }
-/* Adjust padding and width for smaller devices */
 @media (max-width: 768px) {
     .about-image img,
     .menu-item img {
-        width: 100%; /* Make images full width on smaller devices */
-        height: auto; /* Allow images to adjust height proportionally */
+        width: 100%; 
+        height: auto; 
     }
 
     .about-description {
-        padding: 20px; /* Adjust padding for about description */
+        padding: 20px; 
     }
 
     .menu-item {
-        padding: 10px; /* Adjust padding for menu items */
+        padding: 10px; 
     }
 
     #book-table.menu-section.book {
-        padding: 40px 20px; /* Adjust padding for book table section */
+        padding: 40px 20px; 
     }
 
     #bookTableBtn2 {
-        width: 100%; /* Make book table button full width */
-        max-width: 200px; /* Limit maximum width */
+        width: 100%; 
+        max-width: 200px; 
     }
 }
-/* Adjustments for smaller devices */
 @media (max-width: 768px) {
-    /* Adjust header text */
+  .menu-item
+  {
+    width: 140%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
     header h1 {
-        font-size: 24px; /* Decrease font size for header */
+        font-size: 24px; 
+        justify-content: center;
+
     }
 
     header p {
-        font-size: 14px; /* Decrease font size for header paragraph */
+        font-size: 14px;
+        justify-content: center;
     }
 
-    /* Adjust container width */
+   
     .container {
-        padding: 0 10px; /* Add some horizontal padding to containers */
-        max-width: 100%; /* Make container full width */
+        padding: 0 10px; 
+        max-width: 100%; 
     }
 
    
@@ -471,13 +515,13 @@ input[type="time"] {
     
     .about-description,
     .menu-item {
-        padding: 10px; /* Add padding to description and menu items */
-        margin-bottom: 20px; /* Add some bottom margin */
+        padding: 10px; 
+        margin-bottom: 20px; 
     }
 
-    /* Adjust footer */
+    
     footer p {
-        font-size: 12px; /* Decrease font size for footer */
+        font-size: 12px; 
     }
 }
 
