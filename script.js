@@ -7,3 +7,6 @@ document.getElementById("bookingForm").addEventListener("submit", function (even
     $('#bookTableModal').modal('hide');
     $('#bookingSuccessModal').modal('show');
 });
+document.getElementById("bookTableBtn2").addEventListener("click", function () {
+    $('#bookTableModal').modal('show');
+});
